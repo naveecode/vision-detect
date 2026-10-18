@@ -1,0 +1,14 @@
+.venv
+.git
+.github
+data
+outputs
+tests
+notebooks
+docs
+**/__pycache__
+**/*.pyc
+web/samples
+web/index.html
+web/app.js
+web/styles.css

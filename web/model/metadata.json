@@ -1,0 +1,33 @@
+{
+  "model_name": "ssdlite320_mobilenet_v3_large",
+  "model_version": "ssdlite-coco-person-e6",
+  "task": "person detection",
+  "dataset": "COCO 2017 person subset",
+  "input_name": "images",
+  "input_size": 320,
+  "input_layout": "RGB NCHW float32 in [0, 1]",
+  "input_note": "Image is stretched to 320x320. Normalization to [-1, 1] is inside the graph.",
+  "outputs": [
+    "boxes",
+    "scores"
+  ],
+  "boxes_format": "xyxy in the 320x320 input, top-k before NMS, sorted by score",
+  "class_name": "person",
+  "person_index": 1,
+  "topk": 300,
+  "nms_iou": 0.55,
+  "default_score_threshold": 0.4,
+  "opset": 17,
+  "sha256": "e60019591e470457e179acfd29d6a090f2e6900b0a351d48bb92e5b8920bd22c",
+  "bytes": 13840340,
+  "parity": {
+    "max_abs_error": 9.1552734375e-05,
+    "validation_photo": {
+      "official": 2,
+      "exported": 2,
+      "top_iou": 1.0,
+      "top_score_abs": 0.0,
+      "image": "000000021167.jpg"
+    }
+  }
+}

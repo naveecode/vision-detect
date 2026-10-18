@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# vision-detect local artifacts
+.venv/
+/data/
+outputs/
+*.pth
+*.pt
+!web/model/*.onnx
