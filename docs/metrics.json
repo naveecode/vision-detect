@@ -1,0 +1,138 @@
+{
+  "note": "Person-class COCO-style AP on the 40-image validation slice in vision_detect/data/coco_person_subset.json. This is not the official COCO val2017 80-class box mAP. torchvision reports 21.3 for SSDLite320 MobileNetV3-Large on that full benchmark.",
+  "hardware": {
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+    "processor": "Intel(R) Xeon(R) Processor",
+    "cpu_count": 4,
+    "gpu": null,
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu"
+  },
+  "training": {
+    "arch": "ssdlite320_mobilenet_v3_large",
+    "seed": 42,
+    "optimizer": "AdamW",
+    "lr": 2e-05,
+    "weight_decay": 0.0001,
+    "epochs_requested": 6,
+    "batch_size": 4,
+    "device": "cpu",
+    "train_images": 160,
+    "val_images": 40,
+    "best_epoch": 6,
+    "best_map": 0.7226323485374451
+  },
+  "pretrained": {
+    "map": 0.676936686038971,
+    "map_50": 0.9405776858329773,
+    "map_75": 0.7412017583847046,
+    "mar_100": 0.7535714507102966,
+    "latency": {
+      "median_ms": 29.3604769999547,
+      "min_ms": 26.561893999996755,
+      "max_ms": 32.709572999920056,
+      "images": 20,
+      "device": "cpu",
+      "batch_size": 1,
+      "includes": "torchvision resize and NMS, model forward only"
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 2.556834676861763,
+      "map": 0.6882466673851013,
+      "map_50": 0.9534371495246887,
+      "map_75": 0.7696471810340881,
+      "mar_100": 0.7607142925262451
+    },
+    {
+      "epoch": 2,
+      "loss": 2.101406717300415,
+      "map": 0.6819440126419067,
+      "map_50": 0.9346398711204529,
+      "map_75": 0.7481004595756531,
+      "mar_100": 0.75
+    },
+    {
+      "epoch": 3,
+      "loss": 1.9717488318681717,
+      "map": 0.6904466152191162,
+      "map_50": 0.9359368085861206,
+      "map_75": 0.7613198757171631,
+      "mar_100": 0.7607142925262451
+    },
+    {
+      "epoch": 4,
+      "loss": 1.756612628698349,
+      "map": 0.7016461491584778,
+      "map_50": 0.9245132207870483,
+      "map_75": 0.7888332009315491,
+      "mar_100": 0.7678571343421936
+    },
+    {
+      "epoch": 5,
+      "loss": 1.7700767427682877,
+      "map": 0.7081170678138733,
+      "map_50": 0.9439389705657959,
+      "map_75": 0.815113365650177,
+      "mar_100": 0.7714285850524902
+    },
+    {
+      "epoch": 6,
+      "loss": 1.6015068501234055,
+      "map": 0.7226323485374451,
+      "map_50": 0.960002064704895,
+      "map_75": 0.8174323439598083,
+      "mar_100": 0.7821428775787354
+    }
+  ],
+  "checkpoint_reeval": {
+    "map": 0.7226323485374451,
+    "map_50": 0.960002064704895,
+    "map_75": 0.8174323439598083,
+    "mar_100": 0.7821428775787354,
+    "latency": {
+      "median_ms": 28.093334999994113,
+      "min_ms": 25.091278999980204,
+      "max_ms": 30.71811300014815,
+      "images": 20,
+      "device": "cpu",
+      "batch_size": 1,
+      "includes": "torchvision resize and NMS, model forward only"
+    }
+  },
+  "onnx": {
+    "bytes": 13840340,
+    "sha256": "e60019591e470457e179acfd29d6a090f2e6900b0a351d48bb92e5b8920bd22c",
+    "version": "ssdlite-coco-person-e6",
+    "quantized": false,
+    "parity_max_abs_error": 9.1552734375e-05,
+    "validation_photo": {
+      "image": "000000021167.jpg",
+      "official_boxes": 2,
+      "exported_boxes": 2,
+      "top_iou": 1.0,
+      "top_score_abs": 0.0,
+      "score_threshold": 0.3
+    },
+    "latency": {
+      "median_ms": 5.97,
+      "min_ms": 5.8,
+      "max_ms": 7.92,
+      "images": 20,
+      "includes": "opencv resize, onnxruntime, nms"
+    }
+  },
+  "cnn_baseline": {
+    "task": "person-crop vs background-crop classification",
+    "crop_size": 64,
+    "train_crops": 438,
+    "val_crops": 98,
+    "val_accuracy": 0.6836734693877551,
+    "positive_fraction_val": 0.5,
+    "latency_ms_median_batch1": 0.41090800004894845,
+    "epochs": 6,
+    "note": "Accuracy is not detection mAP. The CNN does not localize."
+  }
+}

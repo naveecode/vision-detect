@@ -1,0 +1,124 @@
+{
+  "samples": [
+    {
+      "file": "000000021167.jpg",
+      "overlay": "000000021167_pred.jpg",
+      "coco_id": 21167,
+      "license_name": "Attribution License",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/",
+      "flickr_url": "http://farm4.staticflickr.com/3469/3397730036_36219f4c6e_z.jpg",
+      "coco_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000021167.jpg",
+      "score_threshold": 0.4,
+      "scores": [
+        0.9985,
+        0.9939
+      ],
+      "boxes": [
+        [
+          175.99,
+          38.94,
+          424.64,
+          640.0
+        ],
+        [
+          37.38,
+          112.12,
+          207.74,
+          631.3
+        ]
+      ],
+      "width": 426,
+      "height": 640
+    },
+    {
+      "file": "000000022705.jpg",
+      "overlay": "000000022705_pred.jpg",
+      "coco_id": 22705,
+      "license_name": "Attribution License",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/",
+      "flickr_url": "http://farm3.staticflickr.com/2338/1940631815_acd4f4458e_z.jpg",
+      "coco_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000022705.jpg",
+      "score_threshold": 0.4,
+      "scores": [
+        0.9939
+      ],
+      "boxes": [
+        [
+          145.93,
+          67.02,
+          363.41,
+          602.57
+        ]
+      ],
+      "width": 482,
+      "height": 640
+    },
+    {
+      "file": "000000008021.jpg",
+      "overlay": "000000008021_pred.jpg",
+      "coco_id": 8021,
+      "license_name": "Attribution License",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/",
+      "flickr_url": "http://farm7.staticflickr.com/6117/6240308255_77782d0723_z.jpg",
+      "coco_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000008021.jpg",
+      "score_threshold": 0.4,
+      "scores": [
+        0.986,
+        0.8132,
+        0.4674
+      ],
+      "boxes": [
+        [
+          246.83,
+          101.92,
+          429.79,
+          366.87
+        ],
+        [
+          2.2,
+          270.14,
+          335.65,
+          479.14
+        ],
+        [
+          439.4,
+          289.64,
+          638.78,
+          479.24
+        ]
+      ],
+      "width": 640,
+      "height": 480
+    },
+    {
+      "file": "000000000872.jpg",
+      "overlay": "000000000872_pred.jpg",
+      "coco_id": 872,
+      "license_name": "Attribution License",
+      "license_url": "http://creativecommons.org/licenses/by/2.0/",
+      "flickr_url": "http://farm9.staticflickr.com/8447/7805810128_605424213d_z.jpg",
+      "coco_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000872.jpg",
+      "score_threshold": 0.4,
+      "scores": [
+        0.9851,
+        0.7619
+      ],
+      "boxes": [
+        [
+          175.47,
+          116.94,
+          417.12,
+          588.65
+        ],
+        [
+          281.69,
+          103.74,
+          436.12,
+          536.58
+        ]
+      ],
+      "width": 621,
+      "height": 640
+    }
+  ]
+}

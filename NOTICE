@@ -1,0 +1,21 @@
+vision-detect
+Copyright (c) 2026 naveecode
+Licensed under the MIT License. See LICENSE.
+
+Third-party data
+----------------
+The file vision_detect/data/coco_person_subset.json is a subset of bounding-box
+annotations from COCO 2017.
+
+Annotations: Copyright COCO Consortium, Creative Commons Attribution 4.0.
+https://cocodataset.org/
+https://creativecommons.org/licenses/by/4.0/
+
+Cite: Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona,
+Deva Ramanan, Piotr Dollár, and C. Lawrence Zitnick. Microsoft COCO: Common
+Objects in Context. European Conference on Computer Vision, 2014.
+
+Images referenced by that file are not included. Each image keeps the Flickr
+license recorded on its entry. Sample photos committed under web/samples and
+docs/predictions were limited to records whose license allows redistribution
+and derivatives, and they are credited beside the images.
