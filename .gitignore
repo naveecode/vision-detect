@@ -221,7 +221,7 @@ __marimo__/
 
 # vision-detect local artifacts
 .venv/
-data/
+/data/
 outputs/
 *.pth
 *.pt
